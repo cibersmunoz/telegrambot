@@ -1,15 +1,12 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import subprocess
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
-API_KEY = os.getenv("API_KEY")
-usuario = os.getenv("USER")
-print(usuario)
-print(API_KEY)
 
 async def saludo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None: await update.message.reply_text("¡Hola!")
 
