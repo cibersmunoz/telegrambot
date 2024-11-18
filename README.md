@@ -15,3 +15,6 @@
 6. Baja las dependencias con `pip install -r requirements.txt`.
 
 7. Lanza el bot con `python main.py`
+
+
+O haz `./start.sh`
